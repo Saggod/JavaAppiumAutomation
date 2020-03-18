@@ -7,16 +7,16 @@ public class MainClassTest extends MainClass {
     @Test
     public void testGetLocalNumber() {
         this.getLocalNumber();
-        Assert.assertTrue("getLocalNumber = 14", getLocalNumber() == 14);
+        Assert.assertTrue("getLocalNumber != 14", getLocalNumber() == 14);
     }
 
     @Test
     public void testGetClassNumber(){
         int a = this.gotClassNumber();
         if (a > 45){
-            System.out.println("True");
+            Assert.assertTrue("Значение \"a\" больше 45", a > 45);
         } else {
-            System.out.println("Fail");
+            Assert.assertTrue("Значение \"a\" меньше или равно 45", false);
         }
 
     }
