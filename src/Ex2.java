@@ -27,7 +27,7 @@ public class Ex2 {
         capabilities.setCapability("automationName", "Appium");
         capabilities.setCapability("appPackage", "org.wikipedia");
         capabilities.setCapability("appActivity", ".main.MainActivity");
-        capabilities.setCapability("app", "C:\\Users\\KORABLE\\Desktop\\JavaAppiumAutomation\\apks\\org.wikipedia.apk");
+        capabilities.setCapability("app", "C:\\Users\\kkthx\\Desktop\\JavaAppiumAutomation\\apks\\org.wikipedia.apk");
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
