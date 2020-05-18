@@ -67,13 +67,13 @@ public class SearchPageObject extends MainPageObject {
     {
         this.waitForElementPresent(
                 By.xpath(SERACH_RESULT_ELEMENT),
-                "Cannot find enything by the regquest",
+                "Cannot find anything by the regquest",
                 15
         );
         return this.getAmountOfElements(By.xpath(SERACH_RESULT_ELEMENT));
     }
 
-    public void waitForEmptyResultLable()
+    public void waitForEmptyResultLabel()
     {
         this.waitForElementPresent(By.xpath(SEARCH_EMPTY_RESULT_ELEMENT), "Cannot find empty result element.", 15);
     }

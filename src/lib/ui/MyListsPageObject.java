@@ -43,7 +43,7 @@ public class MyListsPageObject extends MainPageObject {
         this.waitForElementNotPresent(By.xpath(article_xpath), "Saved article still present with title " + article_title, 15);
     }
 
-    public void swipeByArticleToDelite(String article_title) {
+    public void swipeByArticleToDelete(String article_title) {
         this.waitForArticleToAppearByTitle(article_title);
         String article_xpath = getFolderXpathByName(article_title);
         this.swipeElementToLeft(
@@ -52,6 +52,20 @@ public class MyListsPageObject extends MainPageObject {
         );
         this.waitForArticleToDisappiearByTitle(article_title);
     }
+    public void assertThereIsNoArticleWithsThatTitle(String article_title)
+    {
+        String article_xpath = getSaveArticleXpathByTitle(article_title);
+        this.assertElementNotPresent(By.xpath(article_xpath), "We've found deleted article title in the My List");
+    }
 
+    public void waitForTitleArticleAndOpenIt(String article_title)
+    {
+        String article_xpath = getSaveArticleXpathByTitle(article_title);
+        this.waitForElementAndClick(
+                By.xpath(article_xpath),
+                "Cannot open article with title " + article_title,
+                5
+        );
+    }
 
 }

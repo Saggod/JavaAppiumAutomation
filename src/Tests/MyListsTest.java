@@ -30,7 +30,7 @@ public class MyListsTest extends CoreTestCase {
 
         MyListsPageObject MyListsPageObject = new MyListsPageObject(driver);
         MyListsPageObject.openFolderByName(name_of_folder);
-        MyListsPageObject.swipeByArticleToDelite(article_title);
+        MyListsPageObject.swipeByArticleToDelete(article_title);
 
     }
 }
