@@ -1,3 +1,5 @@
+package Tests.Ex;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import lib.CoreTestCase;
@@ -13,7 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
 
-/* Ex3: Тест: отмена поиска */
+/* Tests.Ex.Ex3: Тест: отмена поиска */
 
 
 public class Ex3 extends CoreTestCase {

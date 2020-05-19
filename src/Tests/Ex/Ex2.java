@@ -1,3 +1,5 @@
+package Tests.Ex;
+
 import com.sun.org.glassfish.gmbal.Description;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -21,7 +23,7 @@ public class Ex2 {
     public void setUp() throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        capabilities.setCapability("platformName", "Android");
+        capabilities.setCapability("platformName", "android");
         capabilities.setCapability("deviceName", "AndroidTestDevice");
         capabilities.setCapability("platformVersion", "8.0");
         capabilities.setCapability("automationName", "Appium");

@@ -1,3 +1,5 @@
+package Tests.Ex;
+
 import io.appium.java_client.AppiumDriver;
 import lib.CoreTestCase;
 import lib.ui.ArticlePageObject;
